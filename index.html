@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="calculator">
+     <div class="display">
+         <form name="calculatorform">
+            <input type="text" placeholder="0" id="input" name="screen" disabled onclick="valueButton(this);"/>
+     </div>
+     <div class="buttons">
+         <!-- full erase-->
+        
+
+ <input type="button" value="AC" id="clear" onclick="Clear();"  name="clear"/>
+ <!-- Erase single value  -->
+ <input type="button" value="DEL" id="erase">
+
+ <input type="button" value="/" class="input-button" onclick="valueButton(this);" name="div">  
+ <input type="button" value="*" class="input-button" onclick="valueButton(this);">  
+ <input type="button" value="7" class="input-button" onclick="valueButton(this);">  
+ <input type="button" value="8" class="input-button" onclick="valueButton(this);">  
+ <input type="button" value="9" class="input-button" onclick="valueButton(this);">  
+ <input type="button" value="-" class="input-button" onclick="valueButton(this);">  
+ <input type="button" value="6" class="input-button" onclick="valueButton(this);">  
+ <input type="button" value="5" class="input-button" onclick="valueButton(this);">  
+ <input type="button" value="4" class="input-button" onclick="valueButton(this);">  
+ <input type="button" value="+" class="input-button" onclick="valueButton(this);" name="plus">  
+ <input type="button" value="1" class="input-button" onclick="valueButton(this);">  
+ <input type="button" value="2" class="input-button" onclick="valueButton(this);">  
+ <input type="button" value="3" class="input-button" onclick="valueButton(this);"> 
+ <input type="button" value="=" class="input-button" id="equal" onclick="calculate()" name="equal">   
+ <input type="button" value="0" class="input-button" onclick="valueButton(this);"> 
+ <input type="button" value="." class="input-button" onclick="valueButton(this);">  
+</form>
+</div>
+    
+     </div>
+    </div>
+    <!-- Script -->
+    <script src="main.js"></script>
+</body>
+</html>
